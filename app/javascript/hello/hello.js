@@ -1,17 +1,12 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import PropTypes from 'prop-types'
+import React, { Component } from 'react';
+import './hello.css';
 
-const Hello = props => (
-  <div>Hello {props.name}!</div>
-)
-
-Hello.defaultProps = {
-  name: 'David'
-}
-
-Hello.propTypes = {
-  name: PropTypes.string
+class Hello extends Component {
+  render() {
+    return (
+      <div className="green">Hello {this.props.name}!</div>
+    )
+  }
 }
 
 export default Hello;
