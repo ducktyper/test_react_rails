@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   get 'pages/index'
+  post 'pages/set_name'
 
   root 'pages#index'
 

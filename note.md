@@ -7,3 +7,6 @@ bin/rails g controller pages index
 # Run
 bin/webpack-dev-server
 bin/rails s
+
+# Ajax
+npm install whatwg-fetch --save
