@@ -8,8 +8,10 @@ import PropTypes from 'prop-types'
 import Hello from '../hello/hello.js'
 
 document.addEventListener('DOMContentLoaded', () => {
-  ReactDOM.render(
-    <Hello name="React" />,
-    document.body.appendChild(document.createElement('div')),
-  )
+  if (document.getElementById('root')) {
+    ReactDOM.render(
+      <Hello name="React" />,
+      document.getElementById('root')
+    )
+  }
 })
